@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Fashion Minst</title>
+
+    <!-- bs4 css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- TensorFlow.js script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/1.0.3/tf.min.js"></script> -->
+    <!-- canvas script -->
+    <script src="fabric.js"></script>
+
+    <!-- main script -->
+    <script src="main.js"></script>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body id="body" style="display: none">
+
+<div class="row">
+    <div style='margin-left:100px;'>
+        <canvas id="canvas" width="300" height="300" class="canvas"
+                style="border: 1px solid #326990;margin-top:25px;background-color: #e9ecef;"></canvas>
+        <div class="btn-group" style='margin-top:40px; '>
+            <input type="range" min="5" max="20" value="10" id="myRange" style='margin-top:20px;'>
+            <button type="button" onclick='erase()' style='margin-left:10px;'
+                    disabled>Clear
+            </button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div>
+        <section>
+
+            <ul>
+                <li>
+                    <em id="sym1"></em>
+                    <span id="prob1"></span>
+                </li>
+                <li>
+                    <em id="sym2"></em>
+                    <span id="prob2"></span>
+                </li>
+                <li>
+                    <em id="sym3"></em>
+                    <span id="prob3"></span>
+                </li>
+                <li>
+                    <em id="sym4"></em>
+                    <span id="prob4"></span>
+                </li>
+                <li>
+                    <em id="sym5"></em>
+                    <span id="prob5"></span>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+</body>
+<script>
+    console.log('starting');
+    start('en')
+</script>
+
+</html>
